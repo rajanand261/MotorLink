@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lower_mesh8"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="345dp"
+        android:layout_marginRight="0dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:text="C time"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="60sp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_ps_lable"
+                android:text="--"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_meditation_label"
+                android:layout_width="86sp"
+                android:layout_height="match_parent"
+                android:text="S time"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_test"
+                android:layout_width="44sp"
+                android:layout_height="match_parent"
+                android:text="--"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/yellow"
+                android:textSize="15sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_connection_label"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:text="State"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="60sp"
+                android:layout_height="match_parent"
+                android:text="--"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_raw_label"
+                android:layout_width="86sp"
+                android:layout_height="match_parent"
+                android:text="Test"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_raw"
+                android:layout_width="44sp"
+                android:layout_height="match_parent"
+                android:text="--"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_mode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perct"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_r2r_label"
+                android:text="--"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_attention_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ack"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_r2r_label"
+                android:text="--"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- drawing with view.  -->
+
+    <TableRow
+        android:layout_width="416dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="109dp">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="reset"
+            android:textSize="12sp"
+            app:backgroundTint="@color/Pink_800" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Start"
+            android:textSize="12sp"
+            app:backgroundTint="@color/green" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="138dp"
+            android:text="stop"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:backgroundTint="@color/red" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="@mipmap/toolbar_motor1"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_sdk_state"
+            android:layout_width="36dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/background_dark"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/screen_background_dark" />
+
+        <ImageView
+            android:id="@+id/iv_btindicator"
+            android:layout_width="36dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/nosignal_v1"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_running"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/screen_background_dark"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wave_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="46dp"
+        android:background="@mipmap/background_axis"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/CircularDeterminateProgressBar"
+            android:layout_width="263dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:max="10000"
+            tools:progress="60" />
+
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="163dp">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="72dp"
+            android:text="comma"
+            android:textColor="@color/yellow" />
+
+        <Button
+            android:id="@+id/btn_c"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="72dp"
+            android:text="connect"
+            android:textColor="@color/green_leaf" />
+
+        <Button
+            android:id="@+id/btn_d"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginBottom="72dp"
+            android:text="dis"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="311dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="411dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="252dp" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="143dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="140dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/tv_upcount"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@id/wave_layout1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="270dp"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/tableLayout1"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="270dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_cent"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/tableLayout1"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_seek"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@id/tableLayout1"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/yellow"
+        android:textSize="45sp"
+        tools:visibility="invisible" />
+
+
+</RelativeLayout>
